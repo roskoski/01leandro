@@ -1,50 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora IMC</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+">
+  <title>Colégio Estadual Dom Carlos</title>
+  
 </head>
-
 <body>
+  <header>
+    <h1>Colégio Estadual Dom Carlos</h1>
+    <p>Educação, cidadania e compromisso com o futuro.</p>
+  </header>
 
-<!-- Cabeçalho -->
-<header class="header">
-    <div class="logo-area">
-        <img src="imc.png" alt="Imagem IMC" class="logo">
-        <h1>Calculadora de IMC</h1>
-    </div>
-</header>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-<!-- Conteúdo principal -->
-<main>
+  <section class="hero" id="inicio">
+    <h2>Bem-vindo ao nosso portal escolar</h2>
+    <p>
+      Um site simples para apresentar informações do colégio, comunicados,
+      atividades e contato com a comunidade escolar.
+    </p>
+    <a href="#sobre" class="btn">Conhecer o colégio</a>
+  </section>
 
-<div class="container">
+  <main class="container">
+    <section id="sobre" class="info-box">
+      <h2>Sobre o Colégio</h2>
+      <p>
+        O Colégio Estadual Dom Carlos tem como missão oferecer ensino de qualidade,
+        promovendo o desenvolvimento acadêmico, social e humano dos estudantes.
+        Aqui valorizamos o respeito, a disciplina e a participação da comunidade.
+      </p>
+    </section>
+<!--Feito a te aqui Ficou pra proxima aula o restante -->
+    <section id="cursos">
+      <div class="cards">
+        <div class="card">
+          <h3>Ensino Fundamental</h3>
+          <p>Formação básica com foco no desenvolvimento integral dos alunos.</p>
+        </div>
+        <div class="card">
+          <h3>Ensino Médio</h3>
+          <p>Preparação para o futuro acadêmico, profissional e social.</p>
+        </div>
+        <div class="card">
+          <h3>Projetos Escolares</h3>
+          <p>Feiras, oficinas, esportes, leitura e atividades culturais.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Calcule seu Índice de Massa Corporal</h2>
+    <section id="agenda" class="info-box">
+      <h2>Agenda e Avisos</h2>
+      <ul class="agenda">
+        <li><strong>20/03:</strong> Reunião com responsáveis às 19h.</li>
+        <li><strong>25/03:</strong> Início da semana de avaliações.</li>
+        <li><strong>02/04:</strong> Feira cultural no pátio da escola.</li>
+      </ul>
+    </section>
 
-    <label for="peso">Peso (kg)</label>
-    <input type="number" id="peso" placeholder="Ex: 80" step="0.1">
+    <section id="contato" class="info-box">
+      <h2>Contato</h2>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
+      <p><strong>Telefone:</strong> (00) 0000-0000</p>
+      <p><strong>E-mail:</strong> contato@domcarlos.edu.br</p>
+      <p><strong>Horário de atendimento:</strong> Segunda a sexta, das 7h às 18h</p>
+    </section>
+  </main>
 
-    <label for="altura">Altura (m)</label>
-    <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
-
-    <button onclick="calcularIMC()">Calcular IMC</button>
-
-    <div id="resultado"></div>
-
-</div>
-
-</main>
-
-<!-- Rodapé -->
-<footer class="footer">
-    <p>Calculadora IMC - Projeto em JavaScript</p>
-    <p>Desenvolvido para estudo de HTML, CSS e JS</p>
-</footer>
-
-<script src="script.js"></script>
-
+  <footer>
+    <p>&copy; 2026 Colégio Estadual Dom Carlos - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
